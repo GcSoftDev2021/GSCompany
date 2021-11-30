@@ -16,6 +16,8 @@ namespace GSCompany.App.Controllers
             return View();
         }
 
+       
+
         public JsonResult BuscarRolUsuario(string IdUser)
         {
             string resultado = dataRol.BuscarRolUsuario(IdUser);
