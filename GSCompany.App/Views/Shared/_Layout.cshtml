@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - GestionSystem</title>
+    <title>GS Company - @ViewBag.Title</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <script src="~/Scripts/modernizr-2.8.3.js"></script>
@@ -14,23 +14,16 @@
     <script src="~/Scripts/Sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="~/Scripts/Sweetalert2/dist/sweetalert2.all.min.js"></script>
     <script src="~/Scripts/js-cookie/js.cookie.js"></script>
-    <script src="~/ScriptsApp/Categoria/Categoria.js"></script>
-    <script src="~/ScriptsApp/Ciudad/Ciudad.js"></script>
-    <script src="~/ScriptsApp/Empresa/Empresa.js"></script>
-    <script src="~/ScriptsApp/Home/Home.js"></script>
-    <script src="~/ScriptsApp/Modulo/Modulo.js"></script>
-    <script src="~/ScriptsApp/Pais/Pais.js"></script>
-    <script src="~/ScriptsApp/Producto/Producto.js"></script>
-    <script src="~/ScriptsApp/Rol/Rol.js"></script>
-    <script src="~/ScriptsApp/Sucursal/Sucursal.js"></script>
-    <script src="~/ScriptsApp/TipoDocumento/TipoDocumento.js"></script>
-    <script src="~/ScriptsApp/Usuario/Usuario.js"></script>
-    <script src="~/ScriptsApp/UsersManagement/UsersManagement.js"></script>
+    <script src="~/ScriptsApp/Home.js"></script>
+    <script src="~/ScriptsApp/Modulo.js"></script>
+    <script src="~/ScriptsApp/Rol.js"></script>
+    <script src="~/ScriptsApp/UsersManagement.js"></script>
+    <script src="~/ScriptsApp/Usuario.js"></script>
 </head>
 <body style="background-color:#f3f3f3">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-opacity-100">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/Home/Inicio" style="color:white">GestionSystem</a>
+            <a class="navbar-brand" href="/Home/Inicio" style="color:white; font-weight:bold">GS Company</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -124,7 +117,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p style="font-size:10px"><strong>GestionSystem Soft Application - By GC Software Developing &copy; @DateTime.Now.Year</strong></p>
+            <p style="font-size:10px"><strong>GS Company Soft Application - By GC Software Developing &copy; @DateTime.Now.Year</strong></p>
         </footer>
     </div>
 

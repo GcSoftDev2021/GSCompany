@@ -117,6 +117,10 @@
     <Content Include="Global.asax" />
     <Content Include="ScriptsApp\Home.js" />
     <Content Include="ScriptsApp\Login.js" />
+    <Content Include="ScriptsApp\Modulo.js" />
+    <Content Include="ScriptsApp\Rol.js" />
+    <Content Include="ScriptsApp\UsersManagement.js" />
+    <Content Include="ScriptsApp\Usuario.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -848,6 +852,15 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Sources\ImagesApp\EnConstruccion.gif" />
+    <Content Include="Sources\ImagesApp\IconoEnConstrucción.png" />
+    <Content Include="Sources\ImagesApp\Login.png" />
+    <Content Include="Sources\ImagesApp\Logo GCSoftDev.png" />
+    <Content Include="Sources\ImagesApp\Usuario.png" />
+    <Content Include="Sources\ImagesPerfilUsers\Usuario.png" />
+    <Content Include="Sources\ImagesProduct\00001.jpg" />
+    <Content Include="Sources\ImagesProduct\00002.jpg" />
+    <Content Include="Sources\ImagesProduct\ImageProductDefault.png" />
     <Content Include="Web.config" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
@@ -881,6 +894,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\ModuloController.cs" />
+    <Compile Include="Controllers\RolController.cs" />
+    <Compile Include="Controllers\UsersManagementController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -891,9 +908,13 @@
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.0.min.map" />
+    <Content Include="Views\Modulo\Modulo.cshtml" />
+    <Content Include="Views\UsersManagement\Users.cshtml" />
+    <Content Include="Views\UsersManagement\PermisoUsers.cshtml" />
+    <Content Include="Views\UsersManagement\RolUsers.cshtml" />
+    <Content Include="Views\Usuario\InformacionUsuario.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -904,7 +925,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Login\" />
+    <Folder Include="Views\Rol\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
@@ -917,6 +938,10 @@
     <ProjectReference Include="..\GSCompany.Data\GSCompany.Data.csproj">
       <Project>{C5DB84B1-C811-4B35-A98F-475A971D3183}</Project>
       <Name>GSCompany.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSCompany.Models\GSCompany.Models.csproj">
+      <Project>{B1110E56-29E9-4701-BC0C-5C001A3F66C7}</Project>
+      <Name>GSCompany.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
