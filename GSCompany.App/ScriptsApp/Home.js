@@ -17,7 +17,6 @@ function CerrarSesion() {
 }
 
 function IrPagina(Url) {
-    debugger;
     let User = Cookies.get('IdUserGestionSystem');
     $.ajax({
         type: 'POST',

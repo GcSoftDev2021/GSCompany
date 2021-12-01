@@ -115,10 +115,15 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="ScriptsApp\Ciudad.js" />
+    <Content Include="ScriptsApp\Empresa.js" />
     <Content Include="ScriptsApp\Home.js" />
     <Content Include="ScriptsApp\Login.js" />
     <Content Include="ScriptsApp\Modulo.js" />
+    <Content Include="ScriptsApp\Pais.js" />
     <Content Include="ScriptsApp\Rol.js" />
+    <Content Include="ScriptsApp\Sucursal.js" />
+    <Content Include="ScriptsApp\TipoDocumento.js" />
     <Content Include="ScriptsApp\UsersManagement.js" />
     <Content Include="ScriptsApp\Usuario.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -892,10 +897,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CiudadController.cs" />
+    <Compile Include="Controllers\EmpresaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ModuloController.cs" />
+    <Compile Include="Controllers\PaisController.cs" />
     <Compile Include="Controllers\RolController.cs" />
+    <Compile Include="Controllers\SucursalController.cs" />
+    <Compile Include="Controllers\TipoDocumentoController.cs" />
     <Compile Include="Controllers\UsersManagementController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
@@ -915,6 +925,11 @@
     <Content Include="Views\UsersManagement\PermisoUsers.cshtml" />
     <Content Include="Views\UsersManagement\RolUsers.cshtml" />
     <Content Include="Views\Usuario\InformacionUsuario.cshtml" />
+    <Content Include="Views\Ciudad\Ciudad.cshtml" />
+    <Content Include="Views\Empresa\Empresa.cshtml" />
+    <Content Include="Views\Pais\Pais.cshtml" />
+    <Content Include="Views\Sucursal\Sucursal.cshtml" />
+    <Content Include="Views\TipoDocumento\TipoDocumento.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

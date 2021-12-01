@@ -14,14 +14,18 @@
     <script src="~/Scripts/Sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="~/Scripts/Sweetalert2/dist/sweetalert2.all.min.js"></script>
     <script src="~/Scripts/js-cookie/js.cookie.js"></script>
+    <script src="~/ScriptsApp/Ciudad.js"></script>
+    <script src="~/ScriptsApp/Empresa.js"></script>
     <script src="~/ScriptsApp/Home.js"></script>
     <script src="~/ScriptsApp/Modulo.js"></script>
+    <script src="~/ScriptsApp/Pais.js"></script>
     <script src="~/ScriptsApp/Rol.js"></script>
+    <script src="~/ScriptsApp/Sucursal.js"></script>
+    <script src="~/ScriptsApp/TipoDocumento.js"></script>
     <script src="~/ScriptsApp/UsersManagement.js"></script>
     <script src="~/ScriptsApp/Usuario.js"></script>
 </head>
 <body style="background-color:#f3f3f3">
-    <input ref="holis" type="type" name="name" value="" />
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-opacity-100">
         <div class="container-fluid">
             <a class="navbar-brand" href="/Home/Inicio" style="color:white; font-weight:bold">GS Company</a>
@@ -92,9 +96,21 @@
                             <li><a class="dropdown-item" href="javascript:IrPagina('/Inventario/Inventario')">Inventario</a></li>
                         </ul>
                     </li>
-                        <li class="nav-item dropdown" id="MenuAdmin">
-                           
-                        </li>
+                    <li class="nav-item dropdown" id="MenuAdmin">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">Administración</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/UsersManagement/Users')">Usuario</a></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/UsersManagement/PermisoUsers')">Permiso</a></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/UsersManagement/RolUsers')">Rol</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/Modulo/Modulo')">Modulo</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/Pais/Pais')">País</a></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/Ciudad/Ciudad')">Ciudad</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/TipoDocumento/TipoDocumento')">Tipo Documento</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -118,25 +134,5 @@
 <script>
     $(document).ready(function () {
         BuscarCookie();
-        var RolUsuario = BuscarRolUsuario(BuscarCookie());
     });
-    if (RolUsuario == 'Admin') {
-        $('#MenuAdmin').empty().append(
-            '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">'+
-                                'Administración'+
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="javascript:IrPagina('/UsersManagement/Users')">Usuario</a></li>
-                                <li><a class="dropdown-item" href="javascript:IrPagina('/UsersManagement/PermisoUsers')">Permiso</a></li>
-                                <li><a class="dropdown-item" href="javascript:IrPagina('/UsersManagement/RolUsers')">Rol</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="javascript:IrPagina('/Modulo/Modulo')">Modulo</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="javascript:IrPagina('/Pais/Pais')">País</a></li>
-                                <li><a class="dropdown-item" href="javascript:IrPagina('/Ciudad/Ciudad')">Ciudad</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="javascript:IrPagina('/TipoDocumento/TipoDocumento')">Tipo Documento</a></li>
-                            </ul>
-        )
-    }
 </script>

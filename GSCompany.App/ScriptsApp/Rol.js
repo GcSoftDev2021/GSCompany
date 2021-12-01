@@ -6,11 +6,10 @@ function BuscarRolUsuario(IdUser) {
         url: '/Rol/BuscarRolUsuario',
         data: { IdUser: IdUser },
         success: function (resultado) {
-            return resultado;
+            return resultado;            
         }
     });
 }
-
 
 function ListaRol() {
     $.ajax({
